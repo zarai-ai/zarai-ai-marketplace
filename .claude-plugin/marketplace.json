@@ -1,7 +1,7 @@
 {
   "name": "zarai-ai",
   "owner": {
-    "name": "EchoAI Labs",
+    "name": "ZARAI AI",
     "email": "plugins@zarai.ai"
   },
   "metadata": {
@@ -16,7 +16,7 @@
       "description": "Implementation task runner with behavioral flag system. Six Tesla-philosophy-mapped flags control verifiable quality modes. No flags = maximum quality bar. Flags scale DOWN, not up.",
       "version": "1.0.0",
       "author": {
-        "name": "EchoAI Labs"
+        "name": "ZARAI AI"
       },
       "homepage": "https://zarai.ai",
       "license": "MIT",

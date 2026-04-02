@@ -28,7 +28,7 @@ A Claude Code plugin marketplace by [ZARAI AI](https://zarai.ai).
 
 ```bash
 # Add the marketplace
-/plugin marketplace add echoai-labs/zarai-ai-marketplace
+/plugin marketplace add zarai-ai/zarai-ai-marketplace
 
 # Install a plugin
 /plugin install zarai-implement@zarai-ai

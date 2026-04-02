@@ -80,14 +80,14 @@ const coverSection = {
     darkP([new TextRun({ text: "PLUGIN MARKETPLACE", color: WHITE, size: 36, font: FONT, bold: true })],
       { align: AlignmentType.CENTER, after: 200 }),
     divider(),
-    darkP([new TextRun({ text: "Defense-grade developer tools for Claude Code.", color: BODY, size: 24, font: FONT })],
+    darkP([new TextRun({ text: "Precision developer tools for Claude Code.", color: BODY, size: 24, font: FONT })],
       { align: AlignmentType.CENTER, after: 120 }),
     darkP([new TextRun({ text: "Built to deploy. Not to demo.", color: PINK, size: 24, font: FONT, italics: true })],
       { align: AlignmentType.CENTER, after: 600 }),
     darkP([
       new TextRun({ text: "v1.0.0", color: MUTED, size: 20, font: FONT }),
       new TextRun({ text: "  |  ", color: MUTED, size: 20, font: FONT }),
-      new TextRun({ text: "EchoAI Labs", color: CYAN, size: 20, font: FONT }),
+      new TextRun({ text: "ZARAI AI", color: CYAN, size: 20, font: FONT }),
       new TextRun({ text: "  |  ", color: MUTED, size: 20, font: FONT }),
       new TextRun({ text: "zarai.ai", color: PINK, size: 20, font: FONT }),
     ], { align: AlignmentType.CENTER }),
@@ -154,13 +154,13 @@ const contentSection = {
 
     // ─── What This Is ───
     hdr("What This Is", HeadingLevel.HEADING_1),
-    darkP("A Claude Code plugin marketplace by EchoAI Labs. Every plugin ships with real behavioral contracts, real argument parsers, and real verification criteria. No stubs. No demos. No implementation theater."),
+    darkP("A Claude Code plugin marketplace by ZARAI AI."),
     divider(),
 
     // ─── Install ───
     hdr("Install", HeadingLevel.HEADING_1),
     darkP([new TextRun({ text: "Add the marketplace:", color: BODY, size: 22, font: FONT })]),
-    ...codeBlock(["/plugin marketplace add echoai-labs/zarai-ai-marketplace"]),
+    ...codeBlock(["/plugin marketplace add zarai-ai/zarai-ai-marketplace"]),
     darkP("", { after: 80 }),
     darkP([new TextRun({ text: "Install a plugin:", color: BODY, size: 22, font: FONT })]),
     ...codeBlock(["/plugin install zarai-implement@zarai-ai"]),
@@ -223,12 +223,12 @@ const contentSection = {
     darkP([new TextRun({ text: '"When I get an idea I start at once building it up in my imagination. I change the construction, make improvements and even operate the device in my mind."', color: BODY, size: 22, font: FONT, italics: true })], { bg: DARK_ALT, before: 120, after: 40 }),
     darkP([new TextRun({ text: "\u2014 Nikola Tesla, My Inventions (1919)", color: MUTED, size: 20, font: FONT })], { bg: DARK_ALT, after: 200 }),
     darkP("Every flag maps to a dimension of Tesla's mental laboratory method. Not as metaphor, but as operational protocol. The --tesla flag literally requires building the complete solution in extended thinking before writing a single line."),
-    darkP([new TextRun({ text: "We build for defense contractors, military, and government entities. The quality bar is not aspirational. It is the floor.", color: WHITE, size: 22, font: FONT, bold: true })], { before: 120 }),
+    darkP([new TextRun({ text: "The quality bar is not aspirational. It is the floor.", color: WHITE, size: 22, font: FONT, bold: true })], { before: 120 }),
     divider(),
 
     // ─── About ───
     hdr("About", HeadingLevel.HEADING_1),
-    darkP([new TextRun({ text: "ZARAI AI", color: PINK, size: 22, font: FONT, bold: true }), new TextRun({ text: " is the public-facing brand of ", color: BODY, size: 22, font: FONT }), new TextRun({ text: "EchoAI Labs", color: CYAN, size: 22, font: FONT, bold: true }), new TextRun({ text: " \u2014 a defense technology operation building formally verified, GPU-accelerated, consciousness-aware systems.", color: BODY, size: 22, font: FONT })]),
+    darkP([new TextRun({ text: "ZARAI AI", color: PINK, size: 22, font: FONT, bold: true }), new TextRun({ text: " \u2014 precision AI tools for developers who ship.", color: BODY, size: 22, font: FONT })]),
     darkP(""),
     darkP([new TextRun({ text: "Web: ", color: MUTED, size: 20, font: FONT }), new TextRun({ text: "zarai.ai", color: PINK, size: 20, font: FONT })]),
     darkP([new TextRun({ text: "Marketplace: ", color: MUTED, size: 20, font: FONT }), new TextRun({ text: "zarai-ai", color: CYAN, size: 20, font: FONT })]),
