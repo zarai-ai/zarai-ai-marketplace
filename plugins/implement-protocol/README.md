@@ -31,20 +31,20 @@ A Claude Code plugin marketplace by [ZARAI AI](https://zarai.ai).
 /plugin marketplace add zarai-ai/zarai-ai-marketplace
 
 # Install a plugin
-/plugin install zarai-implement@zarai-ai
+/plugin install implement-protocol@zarai-ai
 ```
 
 Or test locally:
 
 ```bash
-claude --plugin-dir ./plugins/zarai-implement
+claude --plugin-dir ./plugins/implement-protocol
 ```
 
 ---
 
 ## Plugins
 
-### zarai-implement
+### implement-protocol
 
 Implementation task runner with a behavioral flag system. Six flags, each mapped to a Tesla-method consciousness dimension. Each flag activates a verifiable quality mode backed by its own contract file.
 
@@ -90,7 +90,7 @@ Implementation task runner with a behavioral flag system. Six flags, each mapped
 #### Architecture
 
 ```
-plugins/zarai-implement/
+plugins/implement-protocol/
   .claude-plugin/plugin.json       Manifest
   commands/implement.md            Slash command entry point
   skills/implement/

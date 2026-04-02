@@ -1,5 +1,5 @@
 {
-  "name": "zarai-implement",
+  "name": "implement-protocol",
   "version": "1.0.0",
   "description": "Implementation task runner with six behavioral quality flags. No flags = maximum quality. Flags scale down, not up.",
   "author": {
