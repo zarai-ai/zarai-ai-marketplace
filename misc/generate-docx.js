@@ -10,7 +10,11 @@ const PINK = "FF3366", MAG = "CC33FF", CYAN = "33CCFF", WHITE = "FFFFFF", BODY =
 const BORDER = { style: BorderStyle.SINGLE, size: 1, color: "2A2A3A" };
 const BORDERS = { top: BORDER, bottom: BORDER, left: BORDER, right: BORDER };
 const FONT = "Arial";
-const avatarData = fs.readFileSync(__dirname + "/assets/zarai-avatar.png");
+const ASSETS = __dirname.replace("/misc", "") + "/assets";
+const avatarData = fs.readFileSync(ASSETS + "/zarai-avatar.png");
+const mascotData = fs.readFileSync(ASSETS + "/zarai-mascot.png");
+const heroMoonData = fs.readFileSync(ASSETS + "/hero-moon-mascot.jpg");
+const backCoverData = fs.readFileSync(ASSETS + "/back-cover-moon-mascot.jpg");
 
 const darkP = (text, opts = {}) => new Paragraph({
   shading: { fill: opts.bg || DARK, type: ShadingType.CLEAR },
@@ -68,9 +72,9 @@ const coverSection = {
   },
   children: [
     darkP("", { before: 2400 }),
-    darkP([new ImageRun({ type: "png", data: avatarData, transformation: { width: 120, height: 120 },
-      altText: { title: "ZARAI AI", description: "ZARAI AI Logo", name: "zarai-logo" } })],
-      { align: AlignmentType.CENTER, after: 400 }),
+    darkP([new ImageRun({ type: "png", data: mascotData, transformation: { width: 280, height: 400 },
+      altText: { title: "ZARAI AI", description: "ZARAI AI Mascot", name: "zarai-mascot" } })],
+      { align: AlignmentType.CENTER, after: 200 }),
     darkP([new TextRun({ text: "ZARAI AI", color: PINK, size: 72, bold: true, font: FONT })],
       { align: AlignmentType.CENTER, after: 40 }),
     darkP([new TextRun({ text: "PLUGIN MARKETPLACE", color: WHITE, size: 36, font: FONT, bold: true })],
@@ -165,8 +169,11 @@ const contentSection = {
     ...codeBlock(["claude --plugin-dir ./plugins/zarai-implement"]),
     divider(),
 
-    // ─── IMAGE PLACEHOLDER 1 ───
-    ...imgPlaceholder("Control room / operator facing holographic flag displays"),
+    // ─── IMAGE 1: Mascot on crescent moon ───
+    darkP("", { before: 100 }),
+    darkP([new ImageRun({ type: "jpg", data: heroMoonData, transformation: { width: 680, height: 380 },
+      altText: { title: "ZARAI Mascot", description: "Mascot on crescent moon with hexagonal badges", name: "hero-moon" } })],
+      { align: AlignmentType.CENTER, after: 100 }),
 
     // ─── Plugins ───
     hdr("Plugins", HeadingLevel.HEADING_1),
@@ -196,8 +203,11 @@ const contentSection = {
     darkP([new TextRun({ text: "6.", color: PINK, size: 22, font: FONT, bold: true }), new TextRun({ text: "  Verification checklist produced with evidence for every criterion", color: BODY, size: 22, font: FONT })]),
     divider(),
 
-    // ─── IMAGE PLACEHOLDER 2 ───
-    ...imgPlaceholder("Engineer's hands assembling crystalline flag constellation"),
+    // ─── IMAGE 2: Back cover mascot (golden badges) ───
+    darkP("", { before: 100 }),
+    darkP([new ImageRun({ type: "jpg", data: backCoverData, transformation: { width: 680, height: 380 },
+      altText: { title: "ZARAI Mascot", description: "Mascot with golden hexagonal badges, cosmic backdrop", name: "back-mascot" } })],
+      { align: AlignmentType.CENTER, after: 100 }),
 
     // ─── For Plugin Authors ───
     hdr("For Plugin Authors", HeadingLevel.HEADING_1),
@@ -243,7 +253,7 @@ const doc = new Document({
   sections: [coverSection, contentSection]
 });
 
-const OUT = __dirname + "/ZARAI-AI-Marketplace-Guide.docx";
+const OUT = __dirname.replace("/misc", "") + "/ZARAI-AI-Marketplace-Guide.docx";
 const UNPACKED = "/tmp/zarai-docx-unpack";
 
 Packer.toBuffer(doc).then(buf => {
