@@ -1,0 +1,28 @@
+{
+  "name": "zarai-ai",
+  "owner": {
+    "name": "EchoAI Labs",
+    "email": "plugins@zarai.ai"
+  },
+  "metadata": {
+    "description": "Defense-grade developer tools by ZARAI AI. Built to deploy, not to demo.",
+    "version": "1.0.0",
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "zarai-implement",
+      "source": "./plugins/zarai-implement",
+      "description": "Implementation task runner with behavioral flag system. Six Tesla-philosophy-mapped flags control verifiable quality modes. No flags = maximum quality bar. Flags scale DOWN, not up.",
+      "version": "1.0.0",
+      "author": {
+        "name": "EchoAI Labs"
+      },
+      "homepage": "https://zarai.ai",
+      "license": "MIT",
+      "keywords": ["implementation", "quality", "defense-grade", "tesla-method", "behavioral-flags"],
+      "category": "productivity",
+      "tags": ["implement", "build", "code-quality", "flags", "production"]
+    }
+  ]
+}

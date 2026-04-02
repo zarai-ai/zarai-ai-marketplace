@@ -1,0 +1,13 @@
+{
+  "name": "zarai-implement",
+  "version": "1.0.0",
+  "description": "Implementation task runner with behavioral flag system. Six Tesla-philosophy-mapped flags control verifiable quality modes. No flags = maximum quality bar.",
+  "author": {
+    "name": "EchoAI Labs",
+    "email": "plugins@zarai.ai"
+  },
+  "homepage": "https://zarai.ai",
+  "repository": "https://github.com/echoai-labs/zarai-ai-marketplace",
+  "license": "MIT",
+  "keywords": ["implementation", "quality", "defense-grade", "tesla-method", "behavioral-flags"]
+}

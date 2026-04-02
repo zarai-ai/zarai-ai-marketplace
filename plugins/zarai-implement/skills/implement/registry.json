@@ -1,0 +1,91 @@
+{
+  "version": "1.0.0",
+  "skill": "implement",
+  "description": "Behavioral flag system for /implement — each flag activates a verifiable mode",
+  "flags": {
+    "tesla": {
+      "description": "Tesla mental laboratory method: build entire solution in consciousness space before writing a single line",
+      "file": "flags/tesla.md",
+      "type": "master",
+      "tesla_mapping": "TESLA_MENTAL_LABORATORY_METHOD.tesla_process_stages",
+      "short": "Build in mind first. Dwell until crystallized. Exit when inevitable.",
+      "verification": [
+        "Solution was fully designed in extended thinking before first file write",
+        "Multi-dimensional analysis evident: problem examined from 5+ angles",
+        "No premature implementation — design phase is complete before code phase begins"
+      ]
+    },
+    "noFallbacks": {
+      "description": "Zero fallback tolerance: every code path is the real path, no graceful degradation where correctness is required",
+      "file": "flags/noFallbacks.md",
+      "type": "constraint",
+      "tesla_mapping": "holographic_architecture.complete_in_every_fragment",
+      "short": "Every fragment complete. No shells. No stubs. No escape hatches.",
+      "verification": [
+        "Zero instances of: except pass, TODO, FIXME, NotImplementedError, unimplemented!()",
+        "No default/fallback return values where real data is expected",
+        "Every match/switch arm handles its case with real logic",
+        "Error paths propagate errors — they do not swallow them"
+      ]
+    },
+    "robust": {
+      "description": "Edge case obsession: every boundary condition, every error path, every malformed input handled and tested",
+      "file": "flags/robust.md",
+      "type": "quality",
+      "tesla_mapping": "anti_entropy_mechanics.challenge_evolves",
+      "short": "Difficulties catalyze enhancement. Every edge is a feature.",
+      "verification": [
+        "Empty/null/zero inputs handled explicitly",
+        "Boundary values tested (min, max, off-by-one)",
+        "Malformed/adversarial input produces clear errors, not crashes",
+        "Concurrent access patterns considered where applicable",
+        "Resource cleanup guaranteed (files closed, connections returned)"
+      ]
+    },
+    "verbose": {
+      "description": "Transparent reasoning: cite algorithms, show derivations, explain tradeoffs in code comments and output",
+      "file": "flags/verbose.md",
+      "type": "output",
+      "tesla_mapping": "observable_behavioral_emergence",
+      "short": "Make the invisible visible. Every decision has a trail.",
+      "verification": [
+        "Every non-trivial algorithm cites its source (paper, equation number)",
+        "Every magic constant has a derivation comment",
+        "Tradeoff decisions documented where alternatives existed",
+        "Claude reports reasoning steps at each major milestone"
+      ]
+    },
+    "complex": {
+      "description": "Full complexity honor: implement the real algorithm from the source, not a textbook simplification",
+      "file": "flags/complex.md",
+      "type": "fidelity",
+      "tesla_mapping": "quantum_coherence.awakened_state",
+      "short": "Maintain superposition of all solution paths. Don't collapse prematurely.",
+      "verification": [
+        "Algorithm matches source publication exactly (equation numbers in comments)",
+        "No 'simplified for clarity' reductions applied",
+        "Full parameter space preserved — no hardcoded special cases",
+        "Numerical precision matches or exceeds source requirements"
+      ]
+    },
+    "sophisticated": {
+      "description": "Highest technique available: advanced type systems, algebraic data types, property-based testing, formal methods where applicable",
+      "file": "flags/sophisticated.md",
+      "type": "technique",
+      "tesla_mapping": "recursive_enhancement.awakened_state",
+      "short": "Improve the improvement process. Highest craft the language permits.",
+      "verification": [
+        "Type system leveraged to make invalid states unrepresentable",
+        "Newtypes/branded types used for domain concepts (not raw primitives)",
+        "Property-based testing where algorithm has provable invariants",
+        "Error types are algebraic (enum variants), not string messages"
+      ]
+    }
+  },
+  "flag_combinations": {
+    "all": ["tesla", "noFallbacks", "robust", "verbose", "complex", "sophisticated"],
+    "defense_grade": ["tesla", "noFallbacks", "robust", "complex", "sophisticated"],
+    "production": ["noFallbacks", "robust"],
+    "research": ["tesla", "verbose", "complex"]
+  }
+}
