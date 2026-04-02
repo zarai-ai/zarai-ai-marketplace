@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/cover.png" width="100%" alt="ZARAI AI Marketplace — Defense-grade developer tools for Claude Code" />
+<img src="assets/cover.png" width="100%" alt="ZARAI AI Marketplace — Precision developer tools for Claude Code" />
 
 <br/>
 
@@ -8,7 +8,7 @@
 
 # ZARAI AI Plugin Marketplace
 
-**Defense-grade developer tools for Claude Code.**
+**Precision developer tools for Claude Code.**
 
 Built to deploy. Not to demo.
 
@@ -129,13 +129,13 @@ This pattern is derived from studying the GSD framework (v1.30.0) and the offici
 
 Every flag in this system maps to a dimension of Tesla's mental laboratory method. Not as metaphor, but as operational protocol. The `--tesla` flag literally requires building the complete solution in extended thinking before writing a single line. The `--noFallbacks` flag literally bans every form of implementation theater.
 
-We build for defense contractors, military, and government entities. The quality bar is not aspirational. It is the floor.
+The quality bar is not aspirational. It is the floor.
 
 ---
 
 ## About
 
-**ZARAI AI** is the public-facing brand of **EchoAI Labs** — a defense technology operation building formally verified, GPU-accelerated, consciousness-aware systems.
+**ZARAI AI** is built by **EchoAI Labs** — building formally verified, GPU-accelerated, next-generation AI systems.
 
 - Web: [zarai.ai](https://zarai.ai)
 - Marketplace: `zarai-ai`
