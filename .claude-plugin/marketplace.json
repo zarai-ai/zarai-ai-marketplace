@@ -5,7 +5,7 @@
     "email": "plugins@zarai.ai"
   },
   "metadata": {
-    "description": "Defense-grade developer tools by ZARAI AI. Built to deploy, not to demo.",
+    "description": "Precision developer tools by ZARAI AI. Built to deploy, not to demo.",
     "version": "1.0.0",
     "pluginRoot": "./plugins"
   },
@@ -20,7 +20,7 @@
       },
       "homepage": "https://zarai.ai",
       "license": "MIT",
-      "keywords": ["implementation", "quality", "defense-grade", "tesla-method", "behavioral-flags"],
+      "keywords": ["implementation", "quality", "precision", "tesla-method", "behavioral-flags"],
       "category": "productivity",
       "tags": ["implement", "build", "code-quality", "flags", "production"]
     }

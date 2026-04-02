@@ -12,7 +12,7 @@ a verifiable behavioral mode backed by its own contract file.
 
 - User invokes `/implement` with a task description and optional flags
 - User asks to implement a feature, algorithm, or system with quality requirements
-- User needs defense-grade, research-grade, or production-grade code
+- User needs high-precision, research-grade, or production-grade code
 
 ## Quick Reference
 

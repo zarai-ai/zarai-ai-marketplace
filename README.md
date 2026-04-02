@@ -22,7 +22,7 @@ Built to deploy. Not to demo.
 
 ## What This Is
 
-A Claude Code plugin marketplace by [EchoAI Labs](https://zarai.ai). Every plugin ships with real behavioral contracts, real argument parsers, and real verification criteria. No stubs. No demos. No implementation theater.
+A Claude Code plugin marketplace by [ZARAI AI](https://zarai.ai).
 
 ## Install
 
@@ -52,7 +52,7 @@ Implementation task runner with a behavioral flag system. Six flags, each mapped
 /zarai-implement:implement "build the auth system" --tesla --robust
 ```
 
-**The default is maximum quality.** No flags = all flags active. Flags exist to scale *down* from the maximum, not up. This is how defense contractors think: the baseline is perfection. You relax constraints deliberately, never accidentally.
+**The default is maximum quality.** No flags = all flags active. Flags exist to scale *down* from the maximum, not up. The baseline is perfection. You relax constraints deliberately, never accidentally.
 
 <div align="center">
 <img src="assets/concept-flags.png" width="800" alt="Six behavioral flags as crystalline constructs in the ZARAI gradient" />
@@ -135,11 +135,13 @@ The quality bar is not aspirational. It is the floor.
 
 ## About
 
-**ZARAI AI** is built by **EchoAI Labs** — building formally verified, GPU-accelerated, next-generation AI systems.
+**ZARAI AI** — precision AI tools for developers who ship.
 
 - Web: [zarai.ai](https://zarai.ai)
 - Marketplace: `zarai-ai`
 - First plugin: `zarai-implement` v1.0.0
+
+<sub>A product of [EchoAI Labs](https://echoai-labs.com). MIT License.</sub>
 
 ---
 

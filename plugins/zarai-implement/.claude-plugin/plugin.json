@@ -7,7 +7,7 @@
     "email": "plugins@zarai.ai"
   },
   "homepage": "https://zarai.ai",
-  "repository": "https://github.com/echoai-labs/zarai-ai-marketplace",
+  "repository": "https://github.com/zarai-ai/zarai-ai-marketplace",
   "license": "MIT",
-  "keywords": ["implementation", "quality", "defense-grade", "tesla-method", "behavioral-flags"]
+  "keywords": ["implementation", "quality", "precision", "tesla-method", "behavioral-flags"]
 }
