@@ -370,6 +370,47 @@ my-plugin/
 | Complex (10+ commands) | Full CLI router like gsd-tools.cjs | GSD's 30+ commands |
 | Distributable | Plugin with .claude-plugin/plugin.json | Antigravity skills |
 
+## Plugin Environment Variables
+
+When your skill ships as a plugin, hardcoded paths like `$HOME/.claude/skills/...`
+break because plugins are cached at install time. Use these variables instead:
+
+- **`${CLAUDE_PLUGIN_ROOT}`** — absolute path to your plugin's install directory.
+  Use for referencing bundled scripts, configs, and flag files.
+- **`${CLAUDE_PLUGIN_DATA}`** — persistent directory that survives plugin updates.
+  Use for installed deps (`node_modules`), caches, generated state.
+
+```markdown
+## In your command .md:
+node "${CLAUDE_PLUGIN_ROOT}/skills/implement/scripts/parse.cjs" $ARGUMENTS
+cat "${CLAUDE_PLUGIN_ROOT}/skills/implement/flags/tesla.md"
+```
+
+```json
+// In hooks.json or .mcp.json:
+{ "command": "${CLAUDE_PLUGIN_ROOT}/scripts/validate.sh" }
+```
+
+Both are substituted inline in skill content, agent content, hook commands, and
+MCP/LSP configs. Both are also exported as environment variables to subprocesses.
+
+## User-Configurable Plugin Options
+
+Plugins can prompt users for config values at install time via `userConfig` in
+`plugin.json`. Values are available as `${user_config.KEY}` in configs and as
+`CLAUDE_PLUGIN_OPTION_<KEY>` env vars:
+
+```json
+{
+  "userConfig": {
+    "api_endpoint": { "description": "Your API endpoint", "sensitive": false },
+    "api_token": { "description": "API auth token", "sensitive": true }
+  }
+}
+```
+
+Sensitive values go to system keychain. Non-sensitive to `settings.json`.
+
 ## Common Pitfalls
 
 1. **Putting infrastructure in commands/** — Commands should be thin entry points.
