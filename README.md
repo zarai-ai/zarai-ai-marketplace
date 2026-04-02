@@ -74,7 +74,7 @@ Implementation task runner with a behavioral flag system. Six flags, each mapped
 | Combo | Expands To |
 |-------|-----------|
 | `--all` | All 6 flags |
-| `--defense_grade` | tesla + noFallbacks + robust + complex + sophisticated |
+| `--apex` | tesla + noFallbacks + robust + complex + sophisticated |
 | `--production` | noFallbacks + robust |
 | `--research` | tesla + verbose + complex |
 

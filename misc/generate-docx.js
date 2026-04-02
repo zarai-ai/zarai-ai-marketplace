@@ -115,7 +115,7 @@ const combosTable = new Table({
   rows: [
     tblHdr([{ t: "Combo", w: W2[0] }, { t: "Expands To", w: W2[1] }]),
     tblRow([{ t: "--all", w: W2[0], c: CYAN }, { t: "All 6 flags", w: W2[1] }], DARK),
-    tblRow([{ t: "--defense_grade", w: W2[0], c: CYAN }, { t: "tesla + noFallbacks + robust + complex + sophisticated", w: W2[1] }], DARK_ALT),
+    tblRow([{ t: "--apex", w: W2[0], c: CYAN }, { t: "tesla + noFallbacks + robust + complex + sophisticated", w: W2[1] }], DARK_ALT),
     tblRow([{ t: "--production", w: W2[0], c: CYAN }, { t: "noFallbacks + robust", w: W2[1] }], DARK),
     tblRow([{ t: "--research", w: W2[0], c: CYAN }, { t: "tesla + verbose + complex", w: W2[1] }], DARK_ALT),
   ]

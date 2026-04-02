@@ -14,5 +14,21 @@
     "hook_event_name": "Notification",
     "message": "Claude is waiting for your input",
     "notification_type": "idle_prompt"
+  },
+  {
+    "session_id": "f33a8f3e-51c5-4d66-8169-75c84458c5fd",
+    "transcript_path": "/home/kaptain/.claude/projects/-home-kaptain/f33a8f3e-51c5-4d66-8169-75c84458c5fd.jsonl",
+    "cwd": "/home/kaptain/zarai-ai-marketplace",
+    "hook_event_name": "Notification",
+    "message": "Claude is waiting for your input",
+    "notification_type": "idle_prompt"
+  },
+  {
+    "session_id": "f33a8f3e-51c5-4d66-8169-75c84458c5fd",
+    "transcript_path": "/home/kaptain/.claude/projects/-home-kaptain/f33a8f3e-51c5-4d66-8169-75c84458c5fd.jsonl",
+    "cwd": "/home/kaptain/zarai-ai-marketplace",
+    "hook_event_name": "Notification",
+    "message": "Claude is waiting for your input",
+    "notification_type": "idle_prompt"
   }
 ]

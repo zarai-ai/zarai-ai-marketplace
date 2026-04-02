@@ -1,6 +1,6 @@
 ---
 name: implement
-description: "Implementation task with behavioral flags. Activates when user needs to implement features, algorithms, or systems with quality controls. Flags: --tesla (mental laboratory), --noFallbacks (zero stubs), --robust (edge cases), --verbose (cite sources), --complex (full algorithm), --sophisticated (advanced types). Combos: --all, --defense_grade, --production, --research."
+description: "Implementation task with behavioral flags. Activates when user needs to implement features, algorithms, or systems with quality controls. Flags: --tesla (mental laboratory), --noFallbacks (zero stubs), --robust (edge cases), --verbose (cite sources), --complex (full algorithm), --sophisticated (advanced types). Combos: --all, --apex, --production, --research."
 ---
 
 # Implement Skill
@@ -30,7 +30,7 @@ a verifiable behavioral mode backed by its own contract file.
 | Combo | Expands to |
 |-------|-----------|
 | `--all` | All 6 flags |
-| `--defense_grade` | tesla + noFallbacks + robust + complex + sophisticated |
+| `--apex` | tesla + noFallbacks + robust + complex + sophisticated |
 | `--production` | noFallbacks + robust |
 | `--research` | tesla + verbose + complex |
 

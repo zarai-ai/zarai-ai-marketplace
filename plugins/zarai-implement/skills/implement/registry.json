@@ -84,7 +84,7 @@
   },
   "flag_combinations": {
     "all": ["tesla", "noFallbacks", "robust", "verbose", "complex", "sophisticated"],
-    "defense_grade": ["tesla", "noFallbacks", "robust", "complex", "sophisticated"],
+    "apex": ["tesla", "noFallbacks", "robust", "complex", "sophisticated"],
     "production": ["noFallbacks", "robust"],
     "research": ["tesla", "verbose", "complex"]
   }

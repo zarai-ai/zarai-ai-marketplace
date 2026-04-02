@@ -1,5 +1,5 @@
 ---
-description: "Implementation task with behavioral flags: --tesla --noFallbacks --robust --verbose --complex --sophisticated. Combos: --all --defense_grade --production --research. No flags = all flags (maximum quality)."
+description: "Implementation task with behavioral flags: --tesla --noFallbacks --robust --verbose --complex --sophisticated. Combos: --all --apex --production --research. No flags = all flags (maximum quality)."
 argument-hint: '"task description" [--flags...]'
 ---
 
