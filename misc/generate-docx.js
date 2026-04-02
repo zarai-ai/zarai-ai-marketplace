@@ -149,9 +149,6 @@ const contentSection = {
     })] })
   },
   children: [
-    new TableOfContents("Table of Contents", { hyperlink: true, headingStyleRange: "1-3" }),
-    new Paragraph({ children: [new PageBreak()] }),
-
     // ─── What This Is ───
     hdr("What This Is", HeadingLevel.HEADING_1),
     darkP("A Claude Code plugin marketplace by ZARAI AI."),
