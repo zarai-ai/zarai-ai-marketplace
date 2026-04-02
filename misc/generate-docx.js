@@ -149,88 +149,84 @@ const contentSection = {
     })] })
   },
   children: [
-    // ─── What This Is ───
+    // ─── MANUAL TOC ───
+    darkP([new TextRun({ text: "Contents", color: WHITE, size: 28, font: FONT, bold: true })], { before: 80, after: 60 }),
+    darkP([new TextRun({ text: "01  ", color: PINK, size: 20, font: FONT }), new TextRun({ text: "What This Is", color: BODY, size: 20, font: FONT })], { after: 30 }),
+    darkP([new TextRun({ text: "02  ", color: PINK, size: 20, font: FONT }), new TextRun({ text: "Install", color: BODY, size: 20, font: FONT })], { after: 30 }),
+    darkP([new TextRun({ text: "03  ", color: MAG, size: 20, font: FONT }), new TextRun({ text: "zarai-implement \u2014 Flags, Combos, How It Works", color: BODY, size: 20, font: FONT })], { after: 30 }),
+    darkP([new TextRun({ text: "04  ", color: CYAN, size: 20, font: FONT }), new TextRun({ text: "For Plugin Authors", color: BODY, size: 20, font: FONT })], { after: 30 }),
+    darkP([new TextRun({ text: "05  ", color: CYAN, size: 20, font: FONT }), new TextRun({ text: "Philosophy", color: BODY, size: 20, font: FONT })], { after: 30 }),
+    darkP([new TextRun({ text: "06  ", color: MUTED, size: 20, font: FONT }), new TextRun({ text: "About", color: BODY, size: 20, font: FONT })], { after: 60 }),
+    divider(),
+
+    // ─── 01 What This Is ───
     hdr("What This Is", HeadingLevel.HEADING_1),
-    darkP("A Claude Code plugin marketplace by ZARAI AI."),
-    divider(),
+    darkP("A Claude Code plugin marketplace by ZARAI AI.", { after: 60 }),
 
-    // ─── Install ───
+    // ─── 02 Install ───
     hdr("Install", HeadingLevel.HEADING_1),
-    darkP([new TextRun({ text: "Add the marketplace:", color: BODY, size: 22, font: FONT })]),
+    darkP([new TextRun({ text: "Add the marketplace:", color: BODY, size: 22, font: FONT })], { after: 40 }),
     ...codeBlock(["/plugin marketplace add zarai-ai/zarai-ai-marketplace"]),
-    darkP("", { after: 80 }),
-    darkP([new TextRun({ text: "Install a plugin:", color: BODY, size: 22, font: FONT })]),
+    darkP([new TextRun({ text: "Install a plugin:", color: BODY, size: 22, font: FONT })], { before: 60, after: 40 }),
     ...codeBlock(["/plugin install zarai-implement@zarai-ai"]),
-    darkP("", { after: 80 }),
-    darkP([new TextRun({ text: "Or test locally:", color: BODY, size: 22, font: FONT })]),
+    darkP([new TextRun({ text: "Or test locally:", color: BODY, size: 22, font: FONT })], { before: 60, after: 40 }),
     ...codeBlock(["claude --plugin-dir ./plugins/zarai-implement"]),
-    divider(),
 
-    // ─── IMAGE 1: Mascot on crescent moon ───
-    darkP("", { before: 100 }),
-    darkP([new ImageRun({ type: "jpg", data: heroMoonData, transformation: { width: 680, height: 380 },
+    // ─── IMAGE 1: Smaller, right after install, tight ───
+    darkP([new ImageRun({ type: "jpg", data: heroMoonData, transformation: { width: 480, height: 270 },
       altText: { title: "ZARAI Mascot", description: "Mascot on crescent moon with hexagonal badges", name: "hero-moon" } })],
-      { align: AlignmentType.CENTER, after: 100 }),
+      { align: AlignmentType.RIGHT, before: 120, after: 60 }),
 
-    // ─── Plugins ───
+    // ─── 03 Plugins ───
     hdr("Plugins", HeadingLevel.HEADING_1),
     hdr("zarai-implement", HeadingLevel.HEADING_2, MAG),
-    darkP("Implementation task runner with a behavioral flag system. Six flags, each mapped to a Tesla-method consciousness dimension. Each flag activates a verifiable quality mode backed by its own contract file."),
-    darkP("", { after: 40 }),
+    darkP("Implementation task runner with a behavioral flag system. Six flags, each mapped to a Tesla-method consciousness dimension. Each flag activates a verifiable quality mode backed by its own contract file.", { after: 40 }),
     ...codeBlock(['/zarai-implement:implement "build the auth system" --tesla --robust']),
-    darkP("", { after: 120 }),
     darkP([new TextRun({ text: "The default is maximum quality.", color: WHITE, size: 22, font: FONT, bold: true }),
       new TextRun({ text: " No flags = all flags active. Flags scale ", color: BODY, size: 22, font: FONT }),
       new TextRun({ text: "down", color: PINK, size: 22, font: FONT, italics: true }),
-      new TextRun({ text: " from the maximum, not up.", color: BODY, size: 22, font: FONT })]),
+      new TextRun({ text: " from the maximum, not up.", color: BODY, size: 22, font: FONT })], { before: 60, after: 80 }),
 
     hdr("Flags", HeadingLevel.HEADING_3, CYAN),
     flagsTable,
-    darkP("", { after: 120 }),
+    darkP("", { after: 60 }),
     hdr("Combos", HeadingLevel.HEADING_3, CYAN),
     combosTable,
-    darkP("", { after: 120 }),
+    darkP("", { after: 60 }),
 
     hdr("How It Works", HeadingLevel.HEADING_3, CYAN),
-    darkP([new TextRun({ text: "1.", color: PINK, size: 22, font: FONT, bold: true }), new TextRun({ text: "  You type /zarai-implement:implement \"task\" --flags", color: BODY, size: 22, font: FONT })]),
-    darkP([new TextRun({ text: "2.", color: PINK, size: 22, font: FONT, bold: true }), new TextRun({ text: "  Zero-dep Node.js parser extracts task + resolves flags (combo expansion)", color: BODY, size: 22, font: FONT })]),
-    darkP([new TextRun({ text: "3.", color: PINK, size: 22, font: FONT, bold: true }), new TextRun({ text: "  Claude reads each active flag's behavioral contract .md file", color: BODY, size: 22, font: FONT })]),
-    darkP([new TextRun({ text: "4.", color: PINK, size: 22, font: FONT, bold: true }), new TextRun({ text: "  All contracts bind simultaneously for the session", color: BODY, size: 22, font: FONT })]),
-    darkP([new TextRun({ text: "5.", color: PINK, size: 22, font: FONT, bold: true }), new TextRun({ text: "  Implementation executes under those constraints", color: BODY, size: 22, font: FONT })]),
-    darkP([new TextRun({ text: "6.", color: PINK, size: 22, font: FONT, bold: true }), new TextRun({ text: "  Verification checklist produced with evidence for every criterion", color: BODY, size: 22, font: FONT })]),
-    divider(),
+    darkP([new TextRun({ text: "1.", color: PINK, size: 22, font: FONT, bold: true }), new TextRun({ text: "  You type /zarai-implement:implement \"task\" --flags", color: BODY, size: 22, font: FONT })], { after: 20 }),
+    darkP([new TextRun({ text: "2.", color: PINK, size: 22, font: FONT, bold: true }), new TextRun({ text: "  Zero-dep Node.js parser extracts task + resolves flags", color: BODY, size: 22, font: FONT })], { after: 20 }),
+    darkP([new TextRun({ text: "3.", color: PINK, size: 22, font: FONT, bold: true }), new TextRun({ text: "  Claude reads each active flag's behavioral contract", color: BODY, size: 22, font: FONT })], { after: 20 }),
+    darkP([new TextRun({ text: "4.", color: PINK, size: 22, font: FONT, bold: true }), new TextRun({ text: "  All contracts bind simultaneously for the session", color: BODY, size: 22, font: FONT })], { after: 20 }),
+    darkP([new TextRun({ text: "5.", color: PINK, size: 22, font: FONT, bold: true }), new TextRun({ text: "  Implementation executes under those constraints", color: BODY, size: 22, font: FONT })], { after: 20 }),
+    darkP([new TextRun({ text: "6.", color: PINK, size: 22, font: FONT, bold: true }), new TextRun({ text: "  Verification checklist with evidence for every criterion", color: BODY, size: 22, font: FONT })], { after: 40 }),
 
-    // ─── IMAGE 2: Back cover mascot (golden badges) ───
-    darkP("", { before: 100 }),
-    darkP([new ImageRun({ type: "jpg", data: backCoverData, transformation: { width: 680, height: 380 },
-      altText: { title: "ZARAI Mascot", description: "Mascot with golden hexagonal badges, cosmic backdrop", name: "back-mascot" } })],
-      { align: AlignmentType.CENTER, after: 100 }),
-
-    // ─── For Plugin Authors ───
+    // ─── 04 For Plugin Authors ───
     hdr("For Plugin Authors", HeadingLevel.HEADING_1),
-    darkP("The three-layer architecture pattern:"),
-    darkP([new TextRun({ text: "Layer 1", color: CYAN, size: 22, font: FONT, bold: true }), new TextRun({ text: "  (.cjs scripts) \u2014 Parse arguments, return structured JSON. Zero AI logic.", color: BODY, size: 22, font: FONT })]),
-    darkP([new TextRun({ text: "Layer 2", color: CYAN, size: 22, font: FONT, bold: true }), new TextRun({ text: "  (.md contracts) \u2014 Behavioral contracts Claude reads conditionally.", color: BODY, size: 22, font: FONT })]),
-    darkP([new TextRun({ text: "Layer 3", color: CYAN, size: 22, font: FONT, bold: true }), new TextRun({ text: "  (slash command .md) \u2014 Thin entry point that orchestrates layers 1 and 2.", color: BODY, size: 22, font: FONT })]),
-    darkP([new TextRun({ text: "Derived from the GSD framework (v1.30.0) and official Claude Code plugin spec.", color: MUTED, size: 20, font: FONT, italics: true })]),
-    divider(),
+    darkP("The three-layer architecture pattern:", { after: 40 }),
+    darkP([new TextRun({ text: "Layer 1", color: CYAN, size: 22, font: FONT, bold: true }), new TextRun({ text: "  (.cjs scripts) \u2014 Parse args, return JSON. Zero AI logic.", color: BODY, size: 22, font: FONT })], { after: 20 }),
+    darkP([new TextRun({ text: "Layer 2", color: CYAN, size: 22, font: FONT, bold: true }), new TextRun({ text: "  (.md contracts) \u2014 Behavioral contracts Claude reads conditionally.", color: BODY, size: 22, font: FONT })], { after: 20 }),
+    darkP([new TextRun({ text: "Layer 3", color: CYAN, size: 22, font: FONT, bold: true }), new TextRun({ text: "  (slash command .md) \u2014 Thin entry point orchestrating layers 1 and 2.", color: BODY, size: 22, font: FONT })], { after: 40 }),
 
-    // ─── Philosophy ───
+    // ─── IMAGE 2: Full width, centered, between sections ───
+    darkP([new ImageRun({ type: "jpg", data: backCoverData, transformation: { width: 720, height: 400 },
+      altText: { title: "ZARAI Mascot", description: "Mascot with golden hexagonal badges, cosmic backdrop", name: "back-mascot" } })],
+      { align: AlignmentType.CENTER, before: 60, after: 60 }),
+
+    // ─── 05 Philosophy ───
     hdr("Philosophy", HeadingLevel.HEADING_1),
-    darkP([new TextRun({ text: '"When I get an idea I start at once building it up in my imagination. I change the construction, make improvements and even operate the device in my mind."', color: BODY, size: 22, font: FONT, italics: true })], { bg: DARK_ALT, before: 120, after: 40 }),
-    darkP([new TextRun({ text: "\u2014 Nikola Tesla, My Inventions (1919)", color: MUTED, size: 20, font: FONT })], { bg: DARK_ALT, after: 200 }),
-    darkP("Every flag maps to a dimension of Tesla's mental laboratory method. Not as metaphor, but as operational protocol. The --tesla flag literally requires building the complete solution in extended thinking before writing a single line."),
-    darkP([new TextRun({ text: "The quality bar is not aspirational. It is the floor.", color: WHITE, size: 22, font: FONT, bold: true })], { before: 120 }),
-    divider(),
+    darkP([new TextRun({ text: '"When I get an idea I start at once building it up in my imagination. I change the construction, make improvements and even operate the device in my mind."', color: BODY, size: 22, font: FONT, italics: true })], { bg: DARK_ALT, before: 60, after: 20 }),
+    darkP([new TextRun({ text: "\u2014 Nikola Tesla, My Inventions (1919)", color: MUTED, size: 20, font: FONT })], { bg: DARK_ALT, after: 80 }),
+    darkP("Every flag maps to a dimension of Tesla's mental laboratory method. Not as metaphor, but as operational protocol.", { after: 40 }),
+    darkP([new TextRun({ text: "The quality bar is not aspirational. It is the floor.", color: WHITE, size: 22, font: FONT, bold: true })], { after: 60 }),
 
-    // ─── About ───
+    // ─── 06 About ───
     hdr("About", HeadingLevel.HEADING_1),
-    darkP([new TextRun({ text: "ZARAI AI", color: PINK, size: 22, font: FONT, bold: true }), new TextRun({ text: " \u2014 precision AI tools for developers who ship.", color: BODY, size: 22, font: FONT })]),
-    darkP(""),
-    darkP([new TextRun({ text: "Web: ", color: MUTED, size: 20, font: FONT }), new TextRun({ text: "zarai.ai", color: PINK, size: 20, font: FONT })]),
-    darkP([new TextRun({ text: "Marketplace: ", color: MUTED, size: 20, font: FONT }), new TextRun({ text: "zarai-ai", color: CYAN, size: 20, font: FONT })]),
-    darkP([new TextRun({ text: "First plugin: ", color: MUTED, size: 20, font: FONT }), new TextRun({ text: "zarai-implement v1.0.0", color: WHITE, size: 20, font: FONT })]),
-    darkP("", { after: 400 }),
+    darkP([new TextRun({ text: "ZARAI AI", color: PINK, size: 22, font: FONT, bold: true }), new TextRun({ text: " \u2014 precision AI tools for developers who ship.", color: BODY, size: 22, font: FONT })], { after: 40 }),
+    darkP([new TextRun({ text: "Web: ", color: MUTED, size: 20, font: FONT }), new TextRun({ text: "zarai.ai", color: PINK, size: 20, font: FONT })], { after: 15 }),
+    darkP([new TextRun({ text: "Marketplace: ", color: MUTED, size: 20, font: FONT }), new TextRun({ text: "zarai-ai", color: CYAN, size: 20, font: FONT })], { after: 15 }),
+    darkP([new TextRun({ text: "First plugin: ", color: MUTED, size: 20, font: FONT }), new TextRun({ text: "zarai-implement v1.0.0", color: WHITE, size: 20, font: FONT })], { after: 200 }),
     darkP([new TextRun({ text: "Built to deploy. Not to demo.", color: PINK, size: 28, font: FONT, italics: true, bold: true })], { align: AlignmentType.CENTER }),
   ]
 };
