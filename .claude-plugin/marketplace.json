@@ -1,28 +1,21 @@
 {
   "name": "zarai-ai",
+  "description": "Precision developer tools by ZARAI AI. Built to deploy, not to demo.",
   "owner": {
     "name": "ZARAI AI",
     "email": "plugins@zarai.ai"
   },
-  "metadata": {
-    "description": "Precision developer tools by ZARAI AI. Built to deploy, not to demo.",
-    "version": "1.0.0",
-    "pluginRoot": "./plugins"
-  },
   "plugins": [
     {
       "name": "zarai-implement",
-      "source": "./plugins/zarai-implement",
-      "description": "Implementation task runner with behavioral flag system. Six Tesla-philosophy-mapped flags control verifiable quality modes. No flags = maximum quality bar. Flags scale DOWN, not up.",
-      "version": "1.0.0",
-      "author": {
-        "name": "ZARAI AI"
-      },
-      "homepage": "https://zarai.ai",
-      "license": "MIT",
-      "keywords": ["implementation", "quality", "precision", "tesla-method", "behavioral-flags"],
+      "description": "Implementation task runner with six behavioral quality flags. No flags = maximum quality. Flags scale down, not up.",
       "category": "productivity",
-      "tags": ["implement", "build", "code-quality", "flags", "production"]
+      "source": "./plugins/zarai-implement",
+      "homepage": "https://zarai.ai",
+      "author": {
+        "name": "ZARAI AI",
+        "email": "plugins@zarai.ai"
+      }
     }
   ]
 }
