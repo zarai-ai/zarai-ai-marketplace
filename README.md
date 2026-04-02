@@ -1,9 +1,10 @@
-<!-- ZARAI AI Marketplace — place cover image here -->
-<!-- ![ZARAI AI Marketplace](assets/cover.png) -->
-
 <div align="center">
 
-<img src="assets/zarai-avatar.png" width="120" alt="ZARAI AI" />
+<img src="assets/cover.png" width="100%" alt="ZARAI AI Marketplace — Defense-grade developer tools for Claude Code" />
+
+<br/>
+
+<img src="assets/zarai-avatar.png" width="80" alt="ZARAI AI" />
 
 # ZARAI AI Plugin Marketplace
 
