@@ -53,6 +53,10 @@ Implementation task runner with a behavioral flag system. Six flags, each mapped
 
 **The default is maximum quality.** No flags = all flags active. Flags exist to scale *down* from the maximum, not up. This is how defense contractors think: the baseline is perfection. You relax constraints deliberately, never accidentally.
 
+<div align="center">
+<img src="assets/concept-flags.png" width="800" alt="Six behavioral flags as crystalline constructs in the ZARAI gradient" />
+</div>
+
 #### Flags
 
 | Flag | Mode | What Changes |
